@@ -67,3 +67,5 @@ Note: for single destination address, pass a string instead of string[]
          var result = streamReader.ReadToEnd();
          var response = JsonHelper.JsonDeserialize<JsonResponse>(result);
      }
+
+For more info, visit dev.infobip.com
