@@ -9,7 +9,7 @@ Initialize SMSClient with username and password
     SMSClient smsClient = new SMSClient(config);
 
 # Sending message with multiple address
-Note: for single destination address, pass a string instead of string[]
+Note: for single destination address, pass a string instead of string[]. Phone number should have a prefix of country code. 
 
     OneApi.Config.Configuration config = new OneApi.Config.Configuration(username, password);
     SMSClient smsClient = new SMSClient(config);
