@@ -19,8 +19,13 @@ Note: for single destination address, pass a string instead of string[]
 
     var result = smsClient.SmsMessagingClient.SendSMS(smsRequest);
     
- # Sending scheduled message
- 
+# Sending scheduled message
+Note: Date and time format for SMS scheduling: 2015-07-07T17:00:00.000+01:00.
+
+
+      DateTime date1 = new DateTime(2008, 4, 10, 6, 20, 0); //yyyy, MM, dd, HH, ss
+      var schedule = date1.ToString("s") + "+08:00";
+
      string username = ConfigurationManager.AppSettings["Username"].ToString(),
          password = ConfigurationManager.AppSettings["Password"].ToString();
 
